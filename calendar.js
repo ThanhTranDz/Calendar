@@ -143,4 +143,11 @@ document.getElementsByClassName("next")[0].addEventListener("click", () => {
     calendar();
 });
 
+document.getElementsByClassName("title")[0].addEventListener("click", () => {
+    date = new Date();
+    currentDay.setMonth(date.getMonth());
+    currentDay.setFullYear(date.getFullYear());
+    calendar();
+});
+
 calendar();
