@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+
+.color-g{
+    color: grey;
+}
+
+.fill-w{
+    fill: white;
+}
+
+.flex{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+#main{
+    margin-top: 5vh;
+    width: 400px;
+    background-color: rgba(58,58, 58, 255);
+    margin-inline: auto;
+    font-family: "Ubuntu", sans-serif;
+}
+.head{
+    padding: 1.2rem;
+    font-size: 1.3em;
+    color: white;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+#header{
+    padding: 1.2rem;
+    padding-left: 16px;
+    font-weight: 700;
+}
+
+.arrow{
+    width: 78px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Cyear, .Cmonth{
+    font-size: 1.2em;
+}
+
+.Cyear:hover, .Cmonth:hover,
+.next:hover, .prev:hover{
+    cursor: pointer;
+}
+
+.Cmonth{
+    padding-right: 15px;
+}
+
+
+
+.current-select{
+    
+}
+
+.days{
+    padding-top: 15px;
+    background-color: rgba(58,58, 58, 255);  
+}
+
+
+.years, .months, .days ul, .dow ul{
+    list-style-type: none;
+}
+
+.month_popup{
+    position: fixed;
+    z-index: 2;
+}
+.content{
+    height:100%;
+}
+.year_popup{
+    position: fixed;
+    z-index: 2;
+}
+
+.none{
+    display: none;
+}
+
+.month_popup .content{
+    padding-top: 40px;
+    margin-left: -16px;
+    width: 400px;
+    height: 326px;
+}
+
+.year_popup .content{
+    padding-top: 40px;
+    margin-left: -16px;
+    width: 400px;
+}
+
+.month_popup li, .days li{
+    text-align: center;
+    width: 75px;
+    cursor: pointer;
+}
+
+.year_popup li{
+    text-align: center;
+    padding-top: 25px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.month_popup li{
+    height: 100px;
+    width: 100px;
+        background-color: rgba(58, 58, 58, 255);
+    padding-top: 39px;
+    
+}
+
+.month_popup ul, .year_popup ul{
+    list-style-type: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.year_popup ul{
+    width: 400px;
+    max-height: 450px;
+    overflow-y: scroll;
+    background-size: cover;
+    background-color: rgba(58, 58, 58, 255);
+    padding-left: 30px;
+}
+
+.days ul{
+    flex-wrap: wrap;
+}
+ 
+.dow li{
+    text-align: center;
+    width: calc(100%/7);
+    
+}
+
+.days li{
+    text-align: center;
+    width: calc(100%/7);
+    font-size: 0.9rem;
+    padding: 1rem;
+    
+}
+
+.days li:hover{
+    border: px solid #a8a5a5;
+    cursor: pointer;    }
+
+li{
+    position: relative;
+    
+}
+
+.days li:active, .dow li{
+    pointer-events:none;
+    
+}
+
+.today{
+    border-radius: 50%;
+    background-color: #00bfff;
+}
